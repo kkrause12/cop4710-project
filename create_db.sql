@@ -3,10 +3,6 @@ DROP DATABASE IF EXISTS Real_Estate;
 CREATE DATABASE Real_Estate;
 USE Real_Estate;
 
--- =====================
--- TABLE CREATION
--- =====================
-
 CREATE TABLE Property(
     address VARCHAR(50),
     ownerName VARCHAR(30),
