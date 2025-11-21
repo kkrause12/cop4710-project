@@ -82,6 +82,8 @@ INSERT INTO Property VALUES
 ('1800 Pembrook Dr.', 'Maggie Kroft', 75429),
 ('945 State Rd.', 'Jim Crew', 45000),
 ('7899 Tennessee St.', 'Kaylee Glep', 100000),
+('200 Oak St.', 'Jane Doe', 200000),
+('333 Birch Ln.', 'Something Name', 120000)
 ('3948 Work Ln.', 'Mark Summers', 500000);
 
 INSERT INTO House VALUES
@@ -89,6 +91,8 @@ INSERT INTO House VALUES
 (6, 5, 12000, '6767 Ford Dr.'),
 (4, 3, 1800, '4567 Park Rd.'),
 (4, 2, 1700, '4215 Ragans Ln.'),
+(3, 2, 1500, '200 Oak St.'),
+(3, 2, 1400, '333 Birch Ln.');
 (3, 2, 2000, '394 Bronco St.');
 
 INSERT INTO BusinessProperty VALUES
@@ -117,7 +121,9 @@ INSERT INTO Listings VALUES
 (2, '1800 Pembrook Dr.', 5, '2025-10-13'),
 (3, '6767 Ford Dr.', 4, '2025-02-01'),
 (4, '945 State Rd.', 3, '2025-07-23'),
-(5, '123 Main St.', 4, '2025-06-09');
+(5, '123 Main St.', 4, '2025-06-09'),
+(6, '200 Oak St.', 2, '2025-11-15'),
+(7, '333 Birch Ln.', 1, '2025-10-20');
 
 INSERT INTO Buyer VALUES
 (1, 'Melissa Jones', '407-283-8043', 'House', 3, 2, NULL, 100000, 250000),
