@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1>Agent Information</h1>
         <style type = "text/css">
          body  { font-family: sans-serif;
                  background-color: lightblue; } 
@@ -15,7 +14,8 @@
     </head>
     <body>
         <?php
-            $query = "SELECT * FROM Agent";
+            $select = $_POST["select"];
+            $query = "SELECT * FROM " . $select;
             if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
                 die("Could not connect to database </body></html>");
             if(!mysqli_select_db($database, "Real_Estate"))
@@ -28,6 +28,7 @@
 
             ?>
             <table>
+                <caption>Displaying <?php print("$select") ?> Information</caption>
                 <?php
                     while($row = mysqli_fetch_row($result)){
                         print("<tr>");

@@ -14,4 +14,22 @@
         Number of Bathrooms:<input type = "text" name="bathrooms"/><br>
         <input type = "submit" value="Search"/>
     </form>
+    <form method = "post" action = "">
+        <p>Search for Business Properties Listings</p>
+        Minimum Price:<input type="text" name="min_price"/><br>
+        Maximum Price:<imput type="text" name="max_price"/><br>
+        Size (sqr feet):<input type="text" name="size"/><br>
+        <input type = "submit" value="Search"/>
+    </form>
+    <br>
+    <form method="post" action="display.php">
+        <p>Select information to display:
+            <select name = "select">
+                <option>Agent</option>
+                <option>Listings</option>
+                <option>Buyer</option>
+            </select></p>
+            <input type = "submit" value = "See Info">
+        </p>
+    </form>
 </html>
