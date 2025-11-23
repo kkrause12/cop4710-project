@@ -22,12 +22,19 @@
                     die( "Could not connect to database </body></html>" );
                 if ( !mysqli_select_db($database, "Real_Estate" ) )
                     die( "Could not open real estate database </body></html>" );
-                if ( !( $result = mysqli_query( $database, $query ) ) ) 
-                {
-                    print( "<p>Could not execute query</p>" );
-                    die( mysql_error() . "</body></html>" );
+                try{
+                    if ( !( $result = mysqli_query( $database, $query ) ) ) 
+                    {
+                        print( "<p>Could not execute query</p>" );
+                        throw new Exception( mysql_error() );
+                    }
                 }
-                mysqli_close($database);
+                catch(Exception $e){
+                    die($e . "</body></html>");
+                }
+                finally{
+                    mysqli_close($database);
+                }
             ?>
             <table>
                 <caption>Results of <?php print("$query") ?></caption>
