@@ -1,3 +1,4 @@
+--Kaitlyn Krause and Tara Kerstetter
 DROP DATABASE IF EXISTS Real_Estate;
 
 CREATE DATABASE Real_Estate;
