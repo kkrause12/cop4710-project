@@ -49,7 +49,7 @@
                         } 
                     }
                     else if($result === true){
-                        print("<p>$result</p>");
+                        print("<p>Success</p>");
                     }
                     else{
                         print("<p>Query failed</p>");
