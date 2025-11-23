@@ -83,7 +83,7 @@ INSERT INTO Property VALUES
 ('945 State Rd.', 'Jim Crew', 45000),
 ('7899 Tennessee St.', 'Kaylee Glep', 100000),
 ('200 Oak St.', 'Jane Doe', 200000),
-('333 Birch Ln.', 'Something Name', 120000)
+('333 Birch Ln.', 'Something Name', 120000),
 ('3948 Work Ln.', 'Mark Summers', 500000);
 
 INSERT INTO House VALUES
@@ -92,7 +92,7 @@ INSERT INTO House VALUES
 (4, 3, 1800, '4567 Park Rd.'),
 (4, 2, 1700, '4215 Ragans Ln.'),
 (3, 2, 1500, '200 Oak St.'),
-(3, 2, 1400, '333 Birch Ln.');
+(3, 2, 1400, '333 Birch Ln.'),
 (3, 2, 2000, '394 Bronco St.');
 
 INSERT INTO BusinessProperty VALUES
